@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import Profil from './conpo/Profil';
+
 
 function App() {
+  const FulName = 'STREET DEFENSE SYSTEM'
+  const Profession = 'ORGANISATION DE SELF DEFENSE'
+  const Bio = ['LA PLUS GRAND ORGANISTAION DE SELF DEFENSE EN TUNISIE ET EN AFRIQUE']
+  const handleName=(a)=>{
+    return alert(` ${a} vous souhaite la bienvenue `)
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Profil FulName={FulName} Profession = {Profession} Bio={Bio} handleName={handleName}>
+    <img src='/PHOTO1.png' alt='not found'/>
+
+  </Profil>
+
     </div>
   );
 }
